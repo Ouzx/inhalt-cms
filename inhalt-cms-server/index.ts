@@ -9,6 +9,10 @@ import morgan from "morgan";
 import { image, post, auth } from "./routes/index.js";
 import { verifyToken } from "./middlewares/auth.js";
 
+/**
+ * This comment _supports_ [Markdown](https://marked.js.org/)
+ */
+
 /* Config */
 dotenv.config();
 const CONNECTION_URL: string = process.env.CONNECTION_URL || "";

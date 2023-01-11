@@ -1,10 +1,10 @@
 {
     "$schema": "https://typedoc.org/schema.json",
     "entryPoints": [
-        "index.ts",
+        "./index.ts",
         "./controllers/*.ts",
         "./middlewares/*.ts",
         "./models/*.ts",
         "./routes/*.ts",
-],
+    ],
 }
