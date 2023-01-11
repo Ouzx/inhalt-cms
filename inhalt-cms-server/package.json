@@ -20,7 +20,8 @@
   "scripts": {
     "build": "npx tsc",
     "start": "node dist/index.js",
-    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\""
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",
+    "doc": "npx typedoc ./index.ts --out ./docs/"
   },
   "keywords": [],
   "author": "",
@@ -34,6 +35,7 @@
     "@types/node": "^18.11.9",
     "concurrently": "^7.6.0",
     "nodemon": "^2.0.20",
+    "typedoc": "^0.23.24",
     "typescript": "^4.9.3"
   }
 }
