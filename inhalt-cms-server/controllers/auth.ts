@@ -7,7 +7,7 @@ import User, { iUser } from "../models/user.js";
 
 /**
  * @description Register a new user body: @interface iUser
- * @route POST /api/auth/register
+ * @route POST /auth/register
  * @access Public
  * @version 1.0.0
  * @author Ouzx
@@ -56,7 +56,7 @@ export const register = async (req: Request, res: Response) => {
 
 /**
  * @description Login a user body: @interface iUser
- * @route POST /api/auth/login
+ * @route POST /auth/login
  * @access Public
  * @version 1.0.0
  * @author Ouzx
@@ -111,7 +111,7 @@ export const login = async (req: Request, res: Response) => {
 
 /**
  * @description Validate token : header - Authorization Bearer
- * @route GET /api/auth/validate
+ * @route GET /auth/validate
  * @access Public
  * @version 1.0.0
  * @author Ouzx
