@@ -1,3 +1,16 @@
+/**
+ * @description Image controller
+ * @version 1.0.0
+ * @author Ouzx
+ * @date 1/11/2023 - 11:30:33 PM
+ * @module controllers/image
+ *
+ * @requires express : Request, Response for typescript type checking
+ *
+ * @exports byFile : Upload an image by file
+ * @exports byURL : Upload an image by url
+ */
+
 import { Request, Response } from "express";
 
 /* File */
