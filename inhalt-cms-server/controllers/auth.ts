@@ -111,7 +111,7 @@ export const login = async (req: Request, res: Response) => {
 
 /**
  * @description Validate token : header - Authorization Bearer
- * @route GET /auth/validate
+ * @route GET /auth/validate-token
  * @access Public
  * @version 1.0.0
  * @author Ouzx
