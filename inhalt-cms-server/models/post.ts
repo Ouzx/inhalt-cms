@@ -1,6 +1,15 @@
 import mongoose, { Document, Schema, model } from "mongoose";
 import User from "./user.js";
 
+/**
+ * Description placeholder
+ * @date 1/11/2023 - 11:13:07 PM
+ *
+ * @export
+ * @interface iPost
+ * @typedef {iPost}
+ * @extends {Document}
+ */
 export interface iPost extends Document {
   title: string;
   content: string;

@@ -21,7 +21,7 @@
     "build": "npx tsc",
     "start": "node dist/index.js",
     "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",
-    "doc": "npx typedoc ./index.ts --out ./docs/"
+    "doc": "npx typedoc --out ./docs/ --options ./typedoc.json --tsconfig ./tsconfig.json"
   },
   "keywords": [],
   "author": "",
