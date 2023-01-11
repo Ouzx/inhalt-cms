@@ -6,7 +6,7 @@ import User, { iUser } from "../models/user.js";
 /* Register */
 
 /**
- * @description Register a new user body: @interface iUser
+ * @description Register a new user
  * @route POST /auth/register
  * @access Public
  * @version 1.0.0
@@ -14,7 +14,7 @@ import User, { iUser } from "../models/user.js";
  * @date 1/11/2023 - 11:30:33 PM
  *
  * @async
- * @param {Request} req - Request object
+ * @param {Request} req - Request object body: @interface iUser
  * @param {Response} res - Response object
  * @returns { Promise<void> }
  */
@@ -55,7 +55,7 @@ export const register = async (req: Request, res: Response) => {
 /* Login */
 
 /**
- * @description Login a user body: @interface iUser
+ * @description Login a user
  * @route POST /auth/login
  * @access Public
  * @version 1.0.0
@@ -63,7 +63,7 @@ export const register = async (req: Request, res: Response) => {
  * @date 1/11/2023 - 11:30:33 PM
  *
  * @async
- * @param {Request} req - Request object
+ * @param {Request} req - Request object body: @interface iUser
  * @param {Response} res - Response object
  * @returns { Promise<void> } *
  */
@@ -110,7 +110,7 @@ export const login = async (req: Request, res: Response) => {
 /* Validate Token */
 
 /**
- * @description Validate token : header - Authorization Bearer
+ * @description Validate token
  * @route GET /auth/validate-token
  * @access Public
  * @version 1.0.0
@@ -118,7 +118,7 @@ export const login = async (req: Request, res: Response) => {
  * @date 1/11/2023 - 11:30:33 PM
  *
  * @async
- * @param {Request} req - Request object
+ * @param {Request} req - Request object : header - Authorization Bearer
  * @param {Response} res - Response object
  * @returns { Promise<void> } *
  */
