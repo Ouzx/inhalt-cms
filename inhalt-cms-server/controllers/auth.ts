@@ -1,3 +1,19 @@
+/**
+ * @description Auth controller
+ * @version 1.0.0
+ * @author Ouzx
+ * @date 1/11/2023 - 11:30:33 PM
+ * @module controllers/auth
+ *
+ * @requires express : Request, Response for typescript type checking
+ * @requires bcrypt : Hashing passwords
+ * @requires jsonwebtoken : Creating tokens
+ * @requires models/user : User model
+ *
+ * @exports register : Registering new user
+ * @exports login : Logging in user
+ * @exports validate : Validating user
+ */
 import { Request, Response } from "express";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
