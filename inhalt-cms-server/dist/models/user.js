@@ -1,4 +1,26 @@
+/**
+ * @description User schema
+ * @version 1.0.0
+ * @author Ouzx
+ * @date 1/11/2023 - 11:30:33 PM
+ * @module models/user
+ *
+ * @requires mongoose : Schema, model for typescript type checking
+ *
+ * @exports iUser : User interface
+ * @exports default : User model
+ */
 import { Schema, model } from "mongoose";
+/**
+ * @description User schema
+ * @version 1.0.0
+ * @author Ouzx
+ * @date 1/11/2023 - 11:30:33 PM
+ *
+ * @const
+ * @type {Schema<iUser>}
+ * @implements {iUser}
+ */
 const userSchema = new Schema({
     username: {
         type: String,
@@ -51,6 +73,7 @@ const userSchema = new Schema({
 }, {
     timestamps: true,
 });
+// Create user model
 const User = model("User", userSchema);
 export default User;
 //# sourceMappingURL=user.js.map

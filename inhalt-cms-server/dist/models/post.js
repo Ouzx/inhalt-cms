@@ -1,4 +1,27 @@
+/**
+ * @description Post model
+ * @version 1.0.0
+ * @author Ouzx
+ * @date 1/11/2023 - 11:30:33 PM
+ * @module models/post
+ *
+ * @requires mongoose : MongoDB ORM
+ * @requires models/user : User model
+ *
+ * @exports iPost : Post interface
+ * @exports default : Post model
+ */
 import mongoose, { Schema, model } from "mongoose";
+/**
+ * @description Post schema
+ * @version 1.0.0
+ * @author Ouzx
+ * @date 1/11/2023 - 11:30:33 PM
+ *
+ * @const
+ * @type {Schema<iPost>}
+ * @implements {iPost}
+ */
 const postSchema = new Schema({
     title: {
         type: String,
@@ -53,6 +76,7 @@ const postSchema = new Schema({
         default: new Date(),
     },
 });
+// Create post model
 const Post = model("Post", postSchema);
 export default Post;
 //# sourceMappingURL=post.js.map
